@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+nodemon \
+  -w src \
+  -e "cpp h" \
+  --exec "clear \
+    && echo -e '\e[38;5;123mBuilding...\e[0m' \
+    && make build/main \
+    && echo ' ' \
+    && echo -e '\e[38;5;192mRunning...\e[0m' \
+    && echo ' ' \
+    && ./build/main \
+    && echo ' '"

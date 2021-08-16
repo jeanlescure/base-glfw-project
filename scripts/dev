@@ -10,4 +10,5 @@ nodemon \
     && echo -e '\e[38;5;192mRunning...\e[0m' \
     && echo ' ' \
     && ./build/main \
-    && echo ' '"
+    && echo ' ' \
+    || echo -e '\e[31mSomething went wrong...\e[0m'"
